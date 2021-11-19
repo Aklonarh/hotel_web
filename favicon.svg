@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#2F5D8C;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:35;stroke-miterlimit:10;}
+	.st3{display:none;fill:#FFFFFF;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}
+</style>
+<circle class="st0" cx="500" cy="500" r="500"/>
+<g>
+	<path class="st1" d="M93.72,386.49h21.64v70.59h78.32v-70.59h21.64v169h-21.64v-79.35h-78.32v79.35H93.72V386.49z"/>
+	<path class="st1" d="M251.9,470.22c0-54.1,29.63-86.82,72.14-86.82c42.51,0,72.39,32.98,72.39,86.82
+		c0,54.36-29.88,88.37-72.39,88.37C281.53,558.58,251.9,524.58,251.9,470.22z M374.02,470.22c0-41.99-19.84-67.76-49.98-67.76
+		c-30.14,0-49.72,25.76-49.72,67.76c0,42.25,19.58,69.3,49.72,69.3C354.18,539.52,374.02,512.47,374.02,470.22z"/>
+	<path class="st1" d="M461.61,404.78H410.6v-18.29h123.92v18.29h-51.27v150.71h-21.64V404.78z"/>
+	<path class="st1" d="M564.66,386.49h97.38v18.29H586.3v52.81h63.89v18.29H586.3v61.31h78.32v18.29h-99.96V386.49z"/>
+	<path class="st1" d="M700.43,386.49h21.64V537.2h73.68v18.29h-95.32V386.49z"/>
+	<path class="st1" d="M414.98,670.22c0-54.1,29.63-86.82,72.14-86.82s72.39,32.98,72.39,86.82c0,54.36-29.88,88.37-72.39,88.37
+		S414.98,724.58,414.98,670.22z M537.1,670.22c0-41.99-19.84-67.76-49.98-67.76s-49.72,25.76-49.72,67.76
+		c0,42.25,19.58,69.3,49.72,69.3S537.1,712.47,537.1,670.22z"/>
+	<path class="st1" d="M595.83,586.49h52.81c34.52,0,59.25,12.37,59.25,47.66c0,26.28-14.94,41.74-37.87,47.66l43.02,73.68h-24.48
+		l-40.71-71.36h-30.4v71.36h-21.64V586.49z M645.56,666.61c26.28,0,40.71-10.82,40.71-32.46c0-22.16-14.43-30.14-40.71-30.14h-28.08
+		v62.6H645.56z"/>
+	<path class="st1" d="M774.11,604.78H723.1v-18.29h123.92v18.29h-51.27v150.71h-21.64V604.78z"/>
+</g>
+<polyline class="st2" points="142,342.92 435.08,206.26 435.08,206.26 435.08,206.26 929.47,431.35 "/>
+<polyline class="st2" points="182.69,259.52 435.89,141.46 435.89,141.46 888.78,347.87 "/>
+<line class="st3" x1="0" y1="500" x2="1000" y2="500"/>
+</svg>

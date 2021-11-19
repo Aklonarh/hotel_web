@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang=cz dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurace | Hotel Ort</title>
+    <!-- default favicon -->
+<link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml">
+<!-- wideley used favicon -->
+<link rel="icon" href="favicon.svg" sizes="32x32" type="image/svg+xml">
+<!-- for apple mobile devices -->
+<link rel="apple-touch-icon-precomposed" href="/favicon.svg" type="image/svg+xml" sizes="152x152">
+<link rel="apple-touch-icon-precomposed" href="/favicon.svg" type="image/svg+xml" sizes="120x120">
+<!-- google tv favicon -->
+<link rel="icon" href="/favicon.svg" sizes="96x96" type="image/svg+xml">
+    <style>
+    .item1 {
+      color: white;
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 150%;
+
+    }
+    .item2 { grid-area: l; }
+    .item3 { grid-area: c; }
+    .item4 { grid-area: r; }
+
+
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+
+        'l c r';
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-gap: 30px;
+      background-color: #e6e6e6;
+      padding: 30px 30px;
+    }
+
+
+
+
+
+    .grid-container > div {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 10px 10px;
+      font-size: 30px;
+      display: block;
+      box-shadow: 1px 1px 15px grey;
+    }
+
+
+    #p {
+      text-align: left;
+      width: 80%;
+      margin: auto;
+    }
+    #pok {
+      width: 90%;
+      padding: 20px;
+    }
+    .item1 {
+      background-color: #2f5d8c;
+    }
+    .but {
+      font-size: 100%;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      color: #2f5d8c;
+      padding: 20px 40px;
+      background-color: white;
+      margin: 0;
+      font-weight: bold;
+      overflow: hidden;
+      text-decoration: none;
+      margin-bottom: 40px;
+    }
+    .but:hover {
+      background-color: #1f4060;
+      color: white;
+    }
+
+
+
+    @media screen and (max-width: 1000px) {
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          'main main main'
+          'l l l'
+          'c c c'
+          'r r r';
+        background-color: #e6e6e6;
+        padding: 10px 10px;
+      }
+
+      .grid-container > div {
+        background-color: #f2f2f2;
+        text-align: center;
+        padding: 0;
+        font-size: 100%;
+        display: block;
+        box-shadow: 1px 1px 15px grey;
+      }
+      #p {
+        text-align: left;
+        width: 80%;
+        margin: auto;
+      }
+
+    }
+
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+<a href="../hotel_web/index.html"><img class="logo" src="../hotel_web/hotel_w.svg" alt="Hotel Ort" width="300px"></a>
+    </header>
+    <nav>
+      <nav>
+        <ul class="nav">
+         <li><a href="../hotel_web/index.html">Domů</a></li>
+         <li class="dropdown">
+          <button class="dropbtn" onclick="myFunction()">Ubytování
+        <i class="fa fa-caret-down"></i>
+      </button>
+         <div class="dropdown-content" id="myDropdown">
+           <a href="../hotel_web/hotel_ubytovani.html">Ubytování</a>
+           <a href="../hotel_web/hotel_cenik.html">Ceník</a>
+           <a href="../hotel_web/hotel_ubytovani.html#rez">Rezervace</a>
+         </div>
+         <li><a class="active" href="../hotel_web/hotel_restaurace.html">Restaurace</a></li>
+         <li class="right"><a href="../hotel_web/hotel_kontakt.php">Kontakt</a></li>
+        </ul>
+      </nav>
+    </nav>
+    <main>
+
+
+        <div class="item1">
+          <h1>RESTAURACE<br>"U BARONA"</h1>
+          <h2>Rezervace a objednávky jídel s sebou na čísle <a style="color:white;"href="tel:00420724737878">+420 724 737 878</a></h2>
+          <a style="text-decoration: none" href="#"><button class="but">JÍDELNÍ LÍSTEK ZDE</button></a>
+        </div>
+          <div class="grid-container">
+              <div class="item2">
+                <img src="hotel_logo_black.svg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="item3">
+                  <img src="hotel_logo_white.svg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="item4">
+                  <img src="hotel_logo_white.svg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+
+          </div>
+
+
+          <!-- The Modal/Lightbox -->
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+              <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="hotel_logo_black.svg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="hotel_logo_white.svg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="hotel_logo_white.svg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="hotel_logo_white.svg" style="width:100%">
+              </div>
+
+              <!-- Next/previous controls -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+              <!-- Caption text -->
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+
+              <!-- Thumbnail image controls -->
+              <div class="column">
+                <img class="demo" src="hotel_logo_black.svg" onclick="currentSlide(1)" alt="Nature">
+              </div>
+
+              <div class="column">
+                <img class="demo" src="hotel_logo_white.svg" onclick="currentSlide(2)" alt="Snow">
+              </div>
+
+              <div class="column">
+                <img class="demo" src="hotel_logo_white.svg" onclick="currentSlide(3)" alt="Mountains">
+              </div>
+
+              <div class="column">
+                <img class="demo" src="hotel_logo_white.svg" onclick="currentSlide(4)" alt="Lights">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="grid-fcontainer">
+      <div class="footer1">
+        <img src="hotel_w.svg" class="flogo">
+      </div>
+        <div class="footer2">
+        <h2 style="color:white">Kontakt</h2>
+        <ul class="kontakt">
+        <li>Hotel Ort</li>
+        <li>Nepřívěc 18</li>
+        <li>506 01 Libošovice-Nepřívěc</li>
+        <li><a href="tel:00420724737878">+420 724 737 878</a></li>
+        <li><a href="mailto:hotelort@seznam.cz">hotelort@seznam.cz</a></li>
+        </ul>
+      </div>
+      <div class="footer3">
+        <h2 style="color:white">Sledujte nás!</h2>
+        <ul>
+          <li>Lorem ipsum</p</li>
+        </ul>
+      </div>
+      <div class="footer4">
+        <p class="footer">© 2021 Elerokka s.r.o.</p>
+      </div>
+    </div>
+    </footer>
+
+    <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    // Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    </script>
+
+
+  </body>
+</html>

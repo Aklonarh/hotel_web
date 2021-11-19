@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang=cz dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubytování | Hotel Ort</title>
+    <!-- default favicon -->
+<link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml">
+<!-- wideley used favicon -->
+<link rel="icon" href="favicon.svg" sizes="32x32" type="image/svg+xml">
+<!-- for apple mobile devices -->
+<link rel="apple-touch-icon-precomposed" href="/favicon.svg" type="image/svg+xml" sizes="152x152">
+<link rel="apple-touch-icon-precomposed" href="/favicon.svg" type="image/svg+xml" sizes="120x120">
+<!-- google tv favicon -->
+<link rel="icon" href="/favicon.svg" sizes="96x96" type="image/svg+xml">
+    <style>
+    .item1 {
+      color: white;
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 150%;
+      background-color: #2f5d8c;
+
+    }
+    .item5 {
+      color: white;
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 150%;
+      background-color: #2f5d8c;
+
+    }
+
+    .item2 { grid-area: l; }
+    .item3 { grid-area: c; }
+    .item4 { grid-area: r; }
+    .item5 { grid-area: rez; }
+
+
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+
+        'l c r';
+        'rez rez rez';
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-gap: 30px;
+      background-color: #e6e6e6;
+      padding: 50px 50px;
+    }
+
+
+
+
+
+    .grid-container > div {
+      background-color: #e6e6e6;
+      text-align: center;
+      padding: 10px 10px;
+      font-size: 30px;
+      display: block;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #2f5d8c;
+    }
+
+
+    #p  {
+      text-align: center;
+      width: 80%;
+      list-style-type: none;
+    }
+    #pok {
+      width: 90%;
+      padding: 20px;
+    }
+    .item1 {
+      background-color: #2f5d8c;
+    }
+
+    @media screen and (max-width: 1000px) {
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          'main main main'
+          'l l l'
+          'c c c'
+          'r r r';
+          'rez rez rez';
+        background-color: #e6e6e6;
+        padding: 10px 10px;
+        font-size: 150%;
+      }
+
+      .grid-container > div {
+        background-color: #e6e6e6;
+        text-align: center;
+        padding: 0;
+        font-size: 100%;
+        display: block;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #2f5d8c;
+      }
+      #p {
+        text-align: left;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        list-style-type: none;
+      }
+
+    li.ub {
+  line-height:1.5;
+  }
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+<a href="../hotel_web/index.html"><img class="logo" src="../hotel_web/hotel_w.svg" alt="Hotel Ort" width="300px"></a>
+    </header>
+    <nav>
+      <ul class="nav">
+       <li><a href="../hotel_web/index.html">Domů</a></li>
+       <li class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Ubytování
+      <i class="fa fa-caret-down"></i>
+    </button>
+       <div class="dropdown-content" id="myDropdown">
+         <a class="active" href="../hotel_web/hotel_ubytovani.html">Ubytování</a>
+         <a href="../hotel_web/hotel_cenik.html">Ceník</a>
+         <a href="../hotel_web/hotel_ubytovani.html#rez">Rezervace</a>
+       </div>
+       <li><a href="../hotel_web/hotel_restaurace.html">Restaurace</a></li>
+       <li class="right"><a href="../hotel_web/hotel_kontakt.php">Kontakt</a></li>
+      </ul>
+    </nav>
+    <main>
+
+      <div class="item1">
+        <h1>UBYTOVÁNÍ</h1>
+        <p>Nabízíme více než 100 lůžek v 29 plně vybavených pokojích. Každý pokoj má vlastní sociální zařízení (sprcha/vana, WC), TV a připojení k WiFi. </p>
+      </div>
+
+      <div class="grid-container">
+        <div class="item2">
+          <h2 style="color:#2f5d8c">25 Pokojů</h2>
+            <ul id="p">
+              <li class="ub">Plně vybavené dvoulůžkové, třílůžkové, čtyřlůžkové pokoje</li>
+            </ul>
+              <img id="pok" src="DSC_0044.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+
+
+          <div class="item3">
+            <h2 style="color:#2f5d8c">3 Apartmány</h2>
+            <ul id="p">
+              <li class="ub">Pokoje s oddělenou ložnicí a obývacím pokojem</li>
+            </ul>
+                <img id="pok" src="DSC_0041.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+              </div>
+
+
+            <div class="item4">
+              <h2 style="color:#2f5d8c">Depandance</h2>
+              <ul id="p">
+                <li class="ub">Dvoulůžkový pokoj se vstupem mimo budovu hotelu</li>
+              </ul>
+                  <img id="pok" src="DSC_0036.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                </div>
+              </div>
+
+          <div class="item5">
+            <h1>REZERVACE</h1>
+            <p id="rez">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+
+
+
+          <!-- The Modal/Lightbox -->
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+              <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="DSC_0044.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="DSC_0045.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="DSC_0041.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="DSC_0042.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="DSC_0043.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="DSC_0036.jpg" style="width:100%">
+              </div>
+
+              <!-- Next/previous controls -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+              <!-- Caption text -->
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+
+              <!-- Thumbnail image controls -->
+              <div class="column">
+                <img class="demo" src="DSC_0044.jpg" onclick="currentSlide(1)" alt="Pokoj">
+              </div>
+
+              <div class="column">
+                <img class="demo" src="DSC_0045.jpg" onclick="currentSlide(2)" alt="Pokoj">
+              </div>
+
+              <div class="column">
+                <img class="demo" src="DSC_0041.jpg" onclick="currentSlide(3)" alt="Apartmán">
+              </div>
+
+              <div class="column">
+                <img class="demo" src="DSC_0042.jpg" onclick="currentSlide(4)" alt="Apartmán">
+              </div>
+
+              <div class="column">
+                <img class="demo" src="DSC_0043.jpg" onclick="currentSlide(4)" alt="Apartmán">
+              </div>
+
+              <div class="column">
+                <img class="demo" src="DSC_0036.jpg" onclick="currentSlide(4)" alt="Depandance">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="grid-fcontainer">
+      <div class="footer1">
+        <img src="hotel_w.svg" class="flogo">
+      </div>
+        <div class="footer2">
+        <h2 style="color:white">Kontakt</h2>
+        <ul class="kontakt">
+        <li>Hotel Ort</li>
+        <li>Nepřívěc 18</li>
+        <li>506 01 Libošovice-Nepřívěc</li>
+        <li><a href="tel:00420724737878">+420 724 737 878</a></li>
+        <li><a href="mailto:hotelort@seznam.cz">hotelort@seznam.cz</a></li>
+        </ul>
+      </div>
+      <div class="footer3">
+        <h2 style="color:white">Sledujte nás!</h2>
+        <ul>
+          <li>Lorem ipsum</p</li>
+        </ul>
+      </div>
+      <div class="footer4">
+        <p class="footer">© 2021 Elerokka s.r.o.</p>
+      </div>
+    </div>
+    </footer>
+<script type="text/javascript">
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+// Open the Modal
+function openModal() {
+document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("demo");
+var captionText = document.getElementById("caption");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+  </body>
+</html>
